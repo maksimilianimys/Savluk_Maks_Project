@@ -1,0 +1,88 @@
+//html::-webkit-scrollbar{
+//  display: none;
+//}
+
+//::-webkit-scrollbar {
+//  width: 8px;
+//}
+//
+//::-webkit-scrollbar-track {
+//  box-shadow: inset 0 0 5px grey;
+//  border-radius: 10px;
+//}
+//
+//::-webkit-scrollbar-thumb {
+//  background: $brown-color;
+//  border-radius: 10px;
+//}
+//
+//::-webkit-scrollbar-thumb:hover {
+//  background: $red-color;
+//}
+//
+//:focus {
+//  outline: 2.5px solid $brown-color /* Задаємо товщину та колір рамки */
+//}
+
+//.no-scroll {
+//  overflow: hidden;
+//}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+a,
+address {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+
+a,
+ul,
+body,
+h3,
+h2,
+p,
+li,
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  user-select: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.container {
+  width: 980px;
+  margin: 0 210px;
+
+  @include tablet{
+    margin: 0 100px;
+  }
+  @include mobile {
+    margin: 0 clamp(20px, 13.021vw, 100px);
+  }
+}

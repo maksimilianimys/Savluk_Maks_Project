@@ -1,0 +1,49 @@
+$font: "PT Sans";
+
+$grey: #767676;
+
+$background_header: #dcdcdc;
+
+///**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+//@mixin desktop-fhd {
+//  @media screen and (min-width: 1920.1px) {
+//    @content;
+//  }
+//}
+
+//@mixin desktop {
+//  @media screen and (min-width: 1680px) and (max-width: 1920px) {
+//    @content;
+//  }
+//}
+
+//@mixin small-desktop {
+//  @media screen and (min-width: 1440px) and (max-width: 1679.9px) {
+//    @content;
+//  }
+//}
+
+//@mixin laptop {
+//  @media screen and (min-width: 1280px) and (max-width: 1439.9px) {
+//    @content;
+//  }
+//}
+
+@mixin small-laptop {
+  @media screen and (min-width: 1024px) and (max-width: 1279.9px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) and (max-width: 1023.9px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: 320px) and (max-width: 767.9px) {
+    @content;
+  }
+}
