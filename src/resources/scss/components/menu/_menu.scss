@@ -1,0 +1,73 @@
+.menu {
+  background-color: $background_menu;
+
+  margin: 0;
+  padding: 0;
+
+  .container{
+    @include mobile{
+      display: none;
+    }
+  }
+
+  &-navigator {
+    display: flex;
+    justify-content: center;
+
+    padding: 17px 0 25px 0;
+
+    &-link {
+      a {
+        position: relative;
+
+        color: $white;
+
+        font-size: 29px;
+        font-weight: 400;
+        line-height: 1.31;
+        letter-spacing: 0.025em;
+        text-align: center;
+
+        @include tablet {
+          font-size: clamp(20px, 2.832vw, 29px);
+        }
+
+        &::after {
+          position: absolute;
+          right: -26px;
+
+          color: $white;
+          content: '|';
+        }
+
+        &:hover, &:focus {
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 4px;
+        }
+      }
+
+      &:nth-child(2) a {
+        margin-left: 41px;
+      }
+
+      &:nth-child(3) a {
+        margin-left: 49px;
+      }
+
+      &:nth-child(4) a {
+        margin-left: 39px;
+      }
+
+      &:nth-child(5) a {
+        margin-left: 45px;
+      }
+
+      &:last-child a::after {
+        content: '';
+      }
+    }
+  }
+}
+
+@import "burger_menu";
