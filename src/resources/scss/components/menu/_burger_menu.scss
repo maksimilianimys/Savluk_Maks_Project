@@ -6,7 +6,7 @@
   }
 }
 
-.menu_mobile-navigator-link{
+.menu_mobile-navigator-link {
   padding: 24px;
   line-height: 1.2;
 }
@@ -19,7 +19,7 @@
   text-align: center;
 
   position: fixed;
-  z-index: 2;
+  z-index: 8;
   top: 0;
   right: -100%;
 
@@ -45,6 +45,7 @@ nav {
 
 .ham-menu {
   position: relative;
+  z-index: 8;
 
   height: 50px;
   width: 50px;

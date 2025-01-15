@@ -5,10 +5,11 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 4000,
         pauseOnHover: true,
         pauseOnFocus: true,
         dots: false,
+        fade: true,
         responsive: [
             {
                 breakpoint: 1024,
