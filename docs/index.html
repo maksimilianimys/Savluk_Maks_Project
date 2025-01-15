@@ -11,6 +11,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 </head>
 
 <body>
@@ -71,8 +74,21 @@
 
 </section>
 
+<section class="slider">
+    <button class="slider-prev"><img src="images/left.jpg" alt="prev-slide-button"></button>
+    <div class="slick-carousel single-item">
+        <div><img class="slide" src="images/slide1.jpg" alt="slide1"></div>
+        <div><img class="slide" src="images/slide2.jpg" alt="slide1"></div>
+    </div>
+    <button class="slider-next"><img src="images/right.jpg" alt="next-slide-button"></button>
+</section>
+
 </body>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="js/burger_menu.js"></script>
+<script src="js/slider.js"></script>
 
 </html>
