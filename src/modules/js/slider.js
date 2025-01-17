@@ -15,6 +15,16 @@ $(document).ready(function () {
                 breakpoint: 1024,
                 settings: {
                     dots: true,
+                    swipe: true,
+                    touchMove: true,
+                },
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    dots: true,
+                    swipe: true,
+                    touchMove: true,
                 },
             },
         ],
@@ -26,5 +36,11 @@ $(document).ready(function () {
 
     $(".slider-next").on("click", function () {
         $(".single-item").slick("slickNext");
+    });
+
+    $(".single-item .slide").on("click", function () {
+        if ($(window).width() <= 1024) {
+            $(".single-item").slick("slickNext");
+        }
     });
 });

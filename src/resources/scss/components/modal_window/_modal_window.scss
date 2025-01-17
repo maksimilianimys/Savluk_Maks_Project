@@ -1,0 +1,256 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 8;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 25px;
+  }
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  position: relative;
+  left: 34.3%;
+  top: 26.3%;
+
+  background-color: $white;
+
+  padding: 27px;
+
+  width: 466px;
+  height: 578px;
+
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  @include tablet {
+    left: 0;
+    top: 0;
+  }
+
+  @include mobile {
+    left: 0;
+    top: 0;
+  }
+}
+
+.modal-content p {
+  position: relative;
+  right: 5px;
+
+  padding-bottom: 25px;
+
+  color: $modal-title;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.29;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include mobile {
+    padding-top: 5px;
+  }
+}
+
+.modal-content .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 15px;
+
+  text-align: left;
+
+  @include mobile {
+    margin-bottom: clamp(10px, 1.953vw, 15px);
+  }
+}
+
+.modal-content label {
+  position: relative;
+  left: 5px;
+
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: $modal-title;
+
+  line-height: 1.214;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 82.8%;
+
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: -27px;
+  right: -27px;
+
+  z-index: 12;
+
+  background: $background_menu;
+  border: none;
+
+  width: 27px;
+  height: 27px;
+
+  cursor: pointer;
+
+  img {
+    position: relative;
+    z-index: 12;
+
+    width: 17px;
+    height: 17px;
+  }
+
+  @include mobile {
+    position: absolute;
+
+    top: 5px;
+    right: 5px;
+  }
+}
+
+
+.modal-content .form-group-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  text-align: left;
+
+  label {
+    position: relative;
+    left: 0;
+    top: 5px;
+
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    height: 142px;
+  }
+
+  @include mobile {
+    margin-bottom: clamp(15px, 2.604vw, 20px);
+  }
+}
+
+.modal-button {
+  width: 128px;
+  height: 42px;
+
+  border-radius: 0;
+  background-color: $background_menu;
+  border: none;
+
+  color: $white;
+
+  letter-spacing: 0.03em;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.successMessage {
+  display: none;
+
+  color: $modal-title;
+
+  margin-top: 20px;
+
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal-content.shrink {
+  width: 250px;
+  height: 125px;
+
+  padding: 15px;
+
+  left: 41%;
+  top: 26%;
+
+  @include tablet{
+    left: 0;
+    top: 0;
+  }
+
+  @include mobile{
+    left: 0;
+    top: 0;
+  }
+}
+
+.modal-content input.error,
+.modal-content textarea.error {
+  border: 1px solid rgb(255, 131, 131);
+  box-shadow: inset 0 0 10px 5px #f1b0b0;
+}
+
+.modal-content input:focus.error,
+.modal-content textarea:focus.error {
+  border: 1px solid rgb(255, 131, 131);
+  outline: none;
+}
+
+.modal-content input::placeholder,
+.modal-content textarea::placeholder {
+  color: rgb(220, 126, 126);
+
+  font-style: italic;
+  line-height: 18px;
+}

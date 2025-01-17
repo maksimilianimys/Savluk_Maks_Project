@@ -1,0 +1,59 @@
+.accordion-button {
+  font-size: 19px;
+  color: $grey;
+
+  padding-bottom: 8px;
+
+  @include mobile {
+    font-size: clamp(16px, 2.474vw, 19px);
+  }
+}
+
+.accordion-content {
+  display: none;
+
+  color: $grey;
+  letter-spacing: 0.021em;
+
+  padding-bottom: 8px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+  max-height: 1000px;
+}
+
+.accordion-item.active .accordion-button {
+  padding-bottom: 2px;
+
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.accordion-content li.active {
+  color: $black;
+  text-decoration: underline;
+}
+
+.accordion-content ul {
+  list-style: disc !important;
+  padding-left: 20px;
+}
+
+.accordion-item:hover .accordion-button,
+.accordion-item:focus .accordion-button {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.accordion-item:hover .accordion-content,
+.accordion-item:focus .accordion-content {
+  display: block;
+  max-height: 1000px;
+}
+
+.accordion-content li:hover,
+.accordion-content li:focus {
+  color: $black;
+  text-decoration: underline;
+}

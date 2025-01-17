@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Company</title>
+    <title>Компанія</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
 
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/modern-normalize.css">
@@ -12,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 </head>
 
@@ -24,19 +27,19 @@
             <div class="header-logo-section">
                 <img src="images/logo.png" alt="header_logo">
                 <div class="header-logo-section-info">
-                    <p class="header-logo-section-info-title">Название компании</p>
-                    <p class="header-logo-section-info-text">cамая клевая компания</p>
+                    <p class="header-logo-section-info-title">Назва компанії</p>
+                    <p class="header-logo-section-info-text">сама класна компанія</p>
                 </div>
             </div>
         </a>
 
         <div class="header-contact-section">
             <ul>
-                <li><a href="tel:+74997777777">+7(499) 777-77-77</a></li>
-                <li><a href="tel:+74997777777">+7(499) 777-77-77</a></li>
+                <li><a href="tel:+74997777777">+38(099) 999-99-99</a></li>
+                <li><a href="tel:+74997777777">+38(999) 999-99-99</a></li>
             </ul>
 
-            <a class="feedback">Обратная связь</a>
+            <a class="feedback" id="openModal">Зворотній звязок</a>
         </div>
     </div>
 </header>
@@ -44,22 +47,22 @@
 <section class="menu">
     <div class="container">
         <ul class="menu-navigator">
-            <li class="menu-navigator-link"><a href="#">Главная</a></li>
-            <li class="menu-navigator-link"><a href="#">Каталог</a></li>
-            <li class="menu-navigator-link"><a href="#">Доставка и оплата</a></li>
-            <li class="menu-navigator-link"><a href="#">Прайс-лист</a></li>
-            <li class="menu-navigator-link"><a href="#">Контакты</a></li>
+            <li class="menu-navigator-link"><a href="#home_page">Головна</a></li>
+            <li class="menu-navigator-link"><a href="#catalog">Каталог</a></li>
+            <li class="menu-navigator-link"><a href="#delivery">Доставка і оплата</a></li>
+            <li class="menu-navigator-link"><a href="#price-list">Прайс-лист</a></li>
+            <li class="menu-navigator-link"><a href="#contact">Контакти</a></li>
         </ul>
     </div>
 
     <div class="burger">
         <div class="menu-mobile">
             <ul class="menu_mobile-navigator">
-                <li class="menu_mobile-navigator-link"><a href="#">Главная</a></li>
-                <li class="menu_mobile-navigator-link"><a href="#">Каталог</a></li>
-                <li class="menu_mobile-navigator-link"><a href="#">Доставка и оплата</a></li>
-                <li class="menu_mobile-navigator-link"><a href="#">Прайс-лист</a></li>
-                <li class="menu_mobile-navigator-link"><a href="#">Контакты</a></li>
+                <li class="menu_mobile-navigator-link"><a href="#home_page">Головна</a></li>
+                <li class="menu_mobile-navigator-link"><a href="#catalog">Каталог</a></li>
+                <li class="menu_mobile-navigator-link"><a href="#delivery">Доставка і оплата</a></li>
+                <li class="menu_mobile-navigator-link"><a href="#price-list">Прайс-лист</a></li>
+                <li class="menu_mobile-navigator-link"><a href="#contact">Контакти</a></li>
             </ul>
         </div>
 
@@ -83,11 +86,233 @@
     <button class="slider-next"><img src="images/right.jpg" alt="next-slide-button"></button>
 </section>
 
+<section class="catalog" id="catalog">
+    <div class="container">
+        <div class="catalog-navigation">
+            <ul class="catalog-navigation-list">
+                <li><a href="#home_page">Головна</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#">Потубота техніка</a></li>
+            </ul>
+        </div>
+
+        <div class="catalog-content">
+
+            <div class="catalog-content-filter">
+                <div class="catalog-content-filter-accordion">
+                    <div class="accordion-item">
+                        <p class="accordion-button" tabindex="0">Автомобілі</p>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Легкі автомобілі</li>
+                                <li>Середні автомобілі</li>
+                                <li>Важкі автомобілі</li>
+                                <li>Скутери</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-button" tabindex="0">Потубота техніка</p>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Мікрохвильовки</li>
+                                <li>Холодильники</li>
+                                <li>Посудомиючі машини</li>
+                                <li>Чайники</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-button" tabindex="0">Мобільна техніка</p>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Смартфони</li>
+                                <li>Планшети</li>
+                                <li>Часи і браслети</li>
+                                <li>Наушники</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-button" tabindex="0">Комп'ютери</p>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Настільні ПК</li>
+                                <li>Ноутбуки</li>
+                                <li>Монітори</li>
+                                <li>Периферійні пристрої</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-button" tabindex="0">Одяг</p>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Жіночий одяг</li>
+                                <li>Чоловічий одяг</li>
+                                <li>Дитячий одяг</li>
+                                <li>Взуття</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-button" tabindex="0">Нерухомість</p>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Квартири</li>
+                                <li>Дома</li>
+                                <li>Комерційна нерухомість</li>
+                                <li>Земельні ділянки</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-content-filter-price" id="price-list">
+                    <a href="#">
+                        <img src="images/logo_price-list.jpg" alt="price-list">
+                        <p>Прайс-лист</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="catalog-content-item">
+                <ul>
+                    <li class="catalog-content-item-card">
+                        <img class="catalog-content-item-card-photo" src="images/nophoto.jpg" alt="photo-item">
+                        <a class="catalog-content-item-card-title">Найкращий чайник, який треба купити!</a>
+                        <div class="catalog-content-item-by">
+                            <p>1 900 грн.</p>
+                            <a><img src="images/icon_buy.svg" alt="icon-buy"></a>
+                        </div>
+                    </li>
+                    <li class="catalog-content-item-card">
+                        <img class="catalog-content-item-card-photo" src="images/nophoto.jpg" alt="photo-item">
+                        <a class="catalog-content-item-card-title">Найкращий чайник, який треба купити!</a>
+                        <div class="catalog-content-item-by">
+                            <p>1 900 грн.</p>
+                            <a><img src="images/icon_buy.svg" alt="icon-buy"></a>
+                        </div>
+                    </li>
+                    <li class="catalog-content-item-card">
+                        <img class="catalog-content-item-card-photo" src="images/nophoto.jpg" alt="photo-item">
+                        <a class="catalog-content-item-card-title">Найкращий чайник, який треба купити!</a>
+                        <div class="catalog-content-item-by">
+                            <p>1 900 грн.</p>
+                            <a><img src="images/icon_buy.svg" alt="icon-buy"></a>
+                        </div>
+                    </li>
+                    <li class="catalog-content-item-card">
+                        <img class="catalog-content-item-card-photo" src="images/nophoto.jpg" alt="photo-item">
+                        <a class="catalog-content-item-card-title">Найкращий чайник, який треба купити!</a>
+                        <div class="catalog-content-item-by">
+                            <p>1 900 грн.</p>
+                            <a><img src="images/icon_buy.svg" alt="icon-buy"></a>
+                        </div>
+                    </li>
+                    <li class="catalog-content-item-card">
+                        <img class="catalog-content-item-card-photo" src="images/nophoto.jpg" alt="photo-item">
+                        <a class="catalog-content-item-card-title">Найкращий чайник, який треба купити!</a>
+                        <div class="catalog-content-item-by">
+                            <p>1 900 грн.</p>
+                            <a><img src="images/icon_buy.svg" alt="icon-buy"></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="catalog-content-item-number-page">
+                    <ul class="number-page-list">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                    </ul>
+                </div>
+
+                <div class="catalog-content-item-description" id="delivery">
+                    <p tabindex="0">Компанія «Піксель Плюс» існує понад 6 років, за цей час ми брали участь у
+                        розробці
+                        більш як 700 сайтів, тому можемо впевнено називати себе професіоналами. На даний момент наш
+                        колектив складається з більш ніж 30 співробітників працюючих у двох офісах у Києві та
+                        Миколаєві.характерні для цього жанру мотиви: нерозділеного кохання, догляду молодості,
+                        згасання
+                        душі. </p>
+                    <p tabindex="0">Одним із основних напрямків робіт нашої компанії є пошукове просування
+                        сайтів, на
+                        ми працюємо з більш ніж 150 постійними клієнтами по більш ніж 11 000 пошукових
+                        запитів. При цьому в роботі основний акцент ми робимо на якості робіт, а також застосовуємо
+                        власні унікальні розробки в галузі SEO просування. На даний момент відділ SEO складається
+                        з 9 осіб під керівництвом провідного спеціаліста, які переважно працюють у нашому
+                        київському офісі.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer-company-info">
+            <p>© 2012–2013 ЗАО «Компанія»
+                <a href="mailto:info@name.ru">info@name.ua</a>
+            </p>
+        </div>
+
+        <div class="footer-link-page">
+            <ul class="footer-link-page-list">
+                <li class="footer-navigator-link"><a href="#home_page">Головна</a></li>
+                <li class="footer-navigator-link"><a href="#catalog">Каталог</a></li>
+                <li class="footer-navigator-link"><a href="#delivery">Доставка і оплата</a></li>
+                <li class="footer-navigator-link"><a href="#price-list">Прайс-лист</a></li>
+                <li class="footer-navigator-link"><a href="#contact">Контакти</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-logo">
+            <img src="images/logo_companydev.svg" alt="logo-company">
+            <p><a href="#home_page">Розробка сайта</a> — компанія «Піксель Плюс»</p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal-overlay" id="modal">
+    <div class="modal-content">
+        <button class="modal-close" id="closeModal"><img src="images/icon_close.svg" alt="close-button"></button>
+        <p id="modalTitle">Зворотній зв'язок</p>
+        <form id="feedbackForm" autocomplete="off">
+            <div class="form-group">
+                <label for="name">Ваше ім'я *</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон *</label>
+                <input type="tel" id="phone" pattern="[0-9+\-\(\)\s]*">
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form-group-message">
+                <label for="message">Повідомлення</label>
+                <textarea id="message"></textarea>
+            </div>
+            <button class="modal-button" type="submit">Відправити</button>
+        </form>
+        <div id="successMessage" class="successMessage">Форма успішно відправлена!</div>
+    </div>
+</div>
+
 </body>
+
+<script src="js/modal-window.js"></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<script src="js/catalog.js"></script>
 <script src="js/burger_menu.js"></script>
 <script src="js/slider.js"></script>
 
